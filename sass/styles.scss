@@ -1,0 +1,111 @@
+*{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.acordeon{
+  display: inline-table;
+}
+.boton{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+h1{
+  color: #64ff77;
+}
+body{
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 4%, rgba(212,148,95,1) 46%, rgba(219,136,132,1) 81%, rgba(164,139,103,1) 100%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-list {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: flex;
+    background-color: #338a5b;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 6px solid black;
+  }
+
+  #left {
+    max-width: 200px;
+    margin-right: 2rem;
+    float: left;
+  }
+}
+
+#divGrande{
+  display: none;
+}
+
+#right{
+  float: right;
+  margin-left: 30px;
+}
+.button {
+  background-color: rgb(88, 88, 149);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: darken(rgb(43, 126, 151), 25%);
+  }
+}
+
+body h1{
+  text-align: center;
+}
+.formulario-srch{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.formulario-srch input{
+  border: 2px solid cornflowerblue;
+  font-size: 20px;
+}
+
+.formulario-srch label{
+  color: #e2c913;
+  font-size: 20px;
+}
+
+.formulario-srch button{
+  padding: 10px;
+  color: white;
+  background-color: rgb(116, 179, 116);
+  border-radius: 8px;
+  border: 0px;
+  margin-left: 10px;
+}
+
+p{
+  color: white;
+}
+
+.character-name{
+  color: white;
+}
+
+.popcorns{
+  width: 15%;
+}

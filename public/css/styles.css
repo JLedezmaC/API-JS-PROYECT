@@ -1,0 +1,90 @@
+* {
+  font-family: 'Gloria Hallelujah', cursive; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.acordeon {
+  display: inline-table; }
+
+.boton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px; }
+
+h1 {
+  color: #64ff77; }
+
+body {
+  background: #833ab4;
+  background: linear-gradient(90deg, #833ab4 4%, #d4945f 46%, #db8884 81%, #a48b67 100%); }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.movie-list {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style-type: none; }
+  .movie-list li {
+    display: flex;
+    background-color: #338a5b;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 6px solid black; }
+  .movie-list #left {
+    max-width: 200px;
+    margin-right: 2rem;
+    float: left; }
+
+#divGrande {
+  display: none; }
+
+#right {
+  margin-left: 30px; }
+
+.button {
+  background-color: #585895;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem; }
+  .button:hover {
+    background-color: #0f2b34; }
+
+body h1 {
+  text-align: center; }
+
+.formulario-srch {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.formulario-srch input {
+  border: 2px solid cornflowerblue;
+  font-size: 20px; }
+
+.formulario-srch label {
+  color: #e2c913;
+  font-size: 20px; }
+
+.formulario-srch button {
+  padding: 10px;
+  color: white;
+  background-color: #74b374;
+  border-radius: 8px;
+  border: 0px;
+  margin-left: 10px; }
+
+p {
+  color: white; }
+
+.character-name {
+  color: white; }
+
+.popcorns {
+  width: 15%; }
