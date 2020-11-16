@@ -1,22 +1,3 @@
-/*function acordeon(){
-  let acc = document.getElementsByClassName("acordeon");
-  let i;
-
-  for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", (event) =>{
-          event.preventDefault();
-          const elemento = event.currentTarget;
-          elemento.classList.add("change_color");
-          let panel = elemento.nextElementSibling;
-          if (panel.style.display === "block") {
-              panel.style.display = "none";
-          } else {
-              panel.style.display = "block";
-          }
-      });
-  }
-};*/
-
 function showMovies(movies) {
   const movieList = document.getElementById('movie-list');
   movieList.innerHTML = '';
