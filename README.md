@@ -2,7 +2,7 @@
 
 Mejoras implementadas en el JS con el API de movies y paso a paso el desarrollo del codigo 
 
-**1- Convierto todo lo que estaba en content asignado por el profe el cual estaba en HTML y lo paso a JS, en este caso se utiliza create element y appendchild.**
+1- **Convierto todo lo que estaba en content asignado por el profe el cual estaba en HTML y lo paso a JS, en este caso se utiliza create element y appendchild.
 
       const divtitle= document.createElement('div');
             divtitle.setAttribute('class', 'acordeon')
@@ -41,7 +41,7 @@ Mejoras implementadas en el JS con el API de movies y paso a paso el desarrollo 
             section2.appendChild(p5);
             
 
-**2-Creo un boton con un fetch y utilizo un evento para poder hacer cuando se le de click, se diriga a la pagina siguiente y muestre las peliculas de la siguiente pagina, con el valor asignado en el otro fetch que trae el value**
+**2-Creo un boton con un fetch y utilizo un evento para poder hacer cuando se le de click, se diriga a la pagina siguiente y muestre las peliculas de la siguiente pagina, con el valor asignado en el otro fetch que trae el value
 
 **Esta es la mejora que implemente **
 
@@ -60,7 +60,7 @@ Mejoras implementadas en el JS con el API de movies y paso a paso el desarrollo 
       })
 
 
-**3- Creo un acordeon el cual funciona como un evento que cuando se le da click varia entre un display block o un display none y lo aplica al nextelementsibling del div actual en el cual este realiza el cambio correspondiente.**
+**3- Creo un acordeon el cual funciona como un evento que cuando se le da click varia entre un display block o un display none y lo aplica al nextelementsibling del div actual en el cual este realiza el cambio correspondiente.
 
       const acordeon = document.querySelectorAll('.acordeon');
       for (let i = 0; i < acordeon.length; i += 1) {
@@ -74,7 +74,7 @@ Mejoras implementadas en el JS con el API de movies y paso a paso el desarrollo 
             info.style.display = 'block';
             
 
-**4- Creo el fetch base el cual trae una parte de la informacion del API como por ejemplo el año, la imagen etc este funciona adjuntandole al search como opcion de busqueda el s y el nombre de la pelicula **.
+**4- Creo el fetch base el cual trae una parte de la informacion del API como por ejemplo el año, la imagen etc este funciona adjuntandole al search como opcion de busqueda el s y el nombre de la pelicula .
 
       const form = document.getElementById("formulario");
       form.addEventListener('submit',(event) =>{
