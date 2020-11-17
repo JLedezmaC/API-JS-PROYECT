@@ -2,7 +2,7 @@
 
 Mejoras implementadas en el JS con el API de movies y paso a paso el desarrollo del codigo 
 
-1- **Convierto todo lo que estaba en content asignado por el profe el cual estaba en HTML y lo paso a JS, en este caso se utiliza create element y appendchild.
+**1- Convierto todo lo que estaba en content asignado por el profe el cual estaba en HTML y lo paso a JS, en este caso se utiliza create element y appendchild.
 
       const divtitle= document.createElement('div');
             divtitle.setAttribute('class', 'acordeon')
