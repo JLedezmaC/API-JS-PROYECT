@@ -9,7 +9,8 @@ function showMovies(movies) {
     .then((response) => response.json())
     .then((data) => {
       const divtitle= document.createElement('div');
-      divtitle.setAttribute('class', 'acordeon')
+      divtitle.setAttribute('class', 'acordeon');
+      divtitle.setAttribute('id', `${movies[i].imdbID}`);
       listItem.appendChild(divtitle);
       const botonPrincipal = document.createElement('button');
       botonPrincipal.setAttribute('class', 'boton')
@@ -43,9 +44,9 @@ function showMovies(movies) {
       const p5 = document.createElement('p');
       p5.innerHTML = data.Plot
       section2.appendChild(p5);
-      const acordeon = document.querySelectorAll('.acordeon');
-      for (let i = 0; i < acordeon.length; i += 1) {
-        acordeon[i].addEventListener('click', (event) => {
+
+      const acordeon = document.getElementById(`${movies[i].imdbID}`);
+        acordeon.addEventListener('click', (event) => {
           event.preventDefault();
           const elemento = event.currentTarget;
           const info = elemento.nextElementSibling;
@@ -55,9 +56,7 @@ function showMovies(movies) {
             info.style.display = 'block';
           }
         });
-      }
     })
-
   }
 }
 
